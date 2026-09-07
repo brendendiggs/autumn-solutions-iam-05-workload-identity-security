@@ -71,6 +71,7 @@ The CSV output provides a findings-oriented format suitable for review, reportin
 9. `09-LedgerFlow-OIDC-New-Secret-Validation.png`
 10. `10-Workload-Identity-Assessment-Final-Open-Finding.png`
 11. `11-Workload-Identity-Assessment-Governed-Final-State.png`
+12. `12-IAM-05-Public-Portfolio-Case-Study.png`
 
 ## Security Design Decisions
 
