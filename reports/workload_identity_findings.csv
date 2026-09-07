@@ -1,0 +1,2 @@
+status,severity,identity,identity_type,category,finding,permission,detail,businessJustification,technicalOwner,nextReviewDate
+ACCEPTED,HIGH,Autumn Graph Automation,Service Principal,Permission,High-impact application permission,User.ReadWrite.All,User.ReadWrite.All granted against Microsoft Graph.,"Required for automated Joiner, Mover, Leaver operations that create, update, and disable Microsoft Entra ID users.",Alex Morgan,2026-12-05

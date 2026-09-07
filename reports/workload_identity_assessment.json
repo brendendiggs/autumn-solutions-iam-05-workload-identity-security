@@ -1,0 +1,54 @@
+{
+  "assessment": "Autumn Solutions Workload Identity Security Assessment",
+  "generatedAt": "2026-09-06T22:15:39.463968+00:00",
+  "applicationsAssessed": 5,
+  "localServicePrincipalsAssessed": 5,
+  "totalDetectedFindings": 1,
+  "openFindingsCount": 0,
+  "acceptedFindingsCount": 1,
+  "openSeverityCounts": {
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "findings": [
+    {
+      "severity": "HIGH",
+      "identity": "Autumn Graph Automation",
+      "identity_type": "Service Principal",
+      "category": "Permission",
+      "finding": "High-impact application permission",
+      "detail": "User.ReadWrite.All granted against Microsoft Graph.",
+      "permission": "User.ReadWrite.All",
+      "status": "ACCEPTED",
+      "businessJustification": "Required for automated Joiner, Mover, Leaver operations that create, update, and disable Microsoft Entra ID users.",
+      "technicalOwner": "Alex Morgan",
+      "compensatingControls": [
+        "Certificate-based workload authentication",
+        "No client secret",
+        "Dedicated application identity",
+        "Named technical owner",
+        "Reduced Microsoft Graph permission set",
+        "Structured lifecycle audit logging"
+      ],
+      "nextReviewDate": "2026-12-05"
+    }
+  ],
+  "applicationPermissions": [
+    {
+      "identity": "Autumn Graph Automation",
+      "resource": "Microsoft Graph",
+      "permission": "User.ReadWrite.All"
+    },
+    {
+      "identity": "Autumn Graph Automation",
+      "resource": "Microsoft Graph",
+      "permission": "LicenseAssignment.ReadWrite.All"
+    },
+    {
+      "identity": "Autumn Graph Automation",
+      "resource": "Microsoft Graph",
+      "permission": "GroupMember.ReadWrite.All"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "identity": "Autumn Graph Automation",
+    "finding": "High-impact application permission",
+    "permission": "User.ReadWrite.All",
+    "disposition": "ACCEPTED",
+    "businessJustification": "Required for automated Joiner, Mover, Leaver operations that create, update, and disable Microsoft Entra ID users.",
+    "technicalOwner": "Alex Morgan",
+    "compensatingControls": [
+      "Certificate-based workload authentication",
+      "No client secret",
+      "Dedicated application identity",
+      "Named technical owner",
+      "Reduced Microsoft Graph permission set",
+      "Structured lifecycle audit logging"
+    ],
+    "nextReviewDate": "2026-12-05"
+  }
+]
